@@ -287,4 +287,14 @@ img{
     .mainBoxContainer{
         padding: 30px;
     }
+    .searchBox .form button {
+        padding: 10px 15px;
+        border: 1px solid #fff;
+        background-color: orange;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
