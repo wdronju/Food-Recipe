@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #101E2C;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.heading h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+}
+
+.searchBox .form{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.searchBox .form input{
+    padding: 10px 20px;
+    flex-basis: 90%;
+    border: none;
+}
+.searchBox .form button{
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    background-color: orange;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.searchBox .form button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: orange;
+    transition: .4s;
+    border: 1px solid orange;
+}
+
+
+.mainBoxContainer{
+    border: 1px solid #20384f;
+    padding: 50px;
+    background-color: #152535;
+}
+.mainBoxContainer .nomeal{
+    color: #e1e1e169;
+    text-align: center;
+    font-weight: 500;
+}
+
+.Allbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+.Allbox .box{
+    background-color: #20384f46;
+    border: 1px solid #20384f;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.Allbox .box img{
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Allbox .boxContent{
+    padding: 15px;
+}
+.Allbox .boxContent h3{
+    color: #ffffffdf;
+    font-weight: 600;
+}
+.Allbox .boxContent p{
+    color: #ffffff9d;
+}
+.Allbox .boxContent span{
+    color: orange;
+    font-style: italic;
+    margin-top: 6px;
+    display: inline-block;
+}
+.Allbox .boxContent .boxfooter .watch{
+    background-color: orange;
+    padding: 8px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top:10px ;
+}
+.Allbox .boxContent .boxfooter .watch:hover{
+    background-color: rgb(219, 142, 0);
+    transition: .3s;
+    cursor: pointer;
+}
+.Allbox .boxContent .boxfooter .view{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.Allbox .boxContent .boxfooter .view:hover{
+    color: orange;
+}
+.boxfooter{
+    margin-top: 15px;
+}
+#thumbnail{
+    min-width: 100%;
+}
+
+/* Css for Popup  start*/
+
+/* Apply basic styling to the table */
+.tableforPopup {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 20px 0;
+  }
+  
+  /* Style the table header */
+  .tableforPopup th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style the table rows */
+  .tableforPopup tr {
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the table data cells */
+  .tableforPopup td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Add alternate row background color */
+  .tableforPopup tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+  .MainBoxoverlay{
+    background-color: rgba(0, 0, 0, 0.526);
+    min-height: 100vh;
+    min-width: 100%;
+   
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .parentOfPopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .popup{
+    max-width: 900px;
+    background-color: #fff;
+    max-height: 550px;
+    padding: 30px;
+    border-radius: 30px;
+    overflow-y: scroll;
+    position: relative;
+
+    box-sizing: border-box;
+  }
+  .popup img{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .popup .buttondiv a{
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 20px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .popup .buttondiv a:hover{
+    background-color: black;
+    transition: .3s;
+  }
+  .popup .buttondiv button{
+    display: inline-block;
+    
+    background-color: rgba(0, 0, 0, 0.59);
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 20px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+  }
+  .popup .buttondiv button:hover{
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+  }
+
+
+
+/* Css for Popup End */
+/* Responsive  */
+
+@media (max-width:1000px) {
+    .Allbox{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr ;
+        gap: 20px;
+    }
+
+    .popup{
+      
+        padding: 30px;
+        margin: 20px;
+        
+        
+      }
+}
+
+@media (max-width:768px) {
+    .Allbox{
+        display: grid;
+        grid-template-columns:   1fr 1fr ;
+        gap: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .Allbox{
+        display: grid;
+        grid-template-columns:    1fr ;
+        gap: 20px;
+    }
+
+    .searchBox .form{
+       margin: 20px;
+    }
+
+    .mainBoxContainer{
+        padding: 30px;
+    }
+}
